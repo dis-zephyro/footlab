@@ -1,0 +1,94 @@
+.b01 {
+	color: #fff;
+	height: 800px;
+	background: url("../img/b01_bg.jpg") top center no-repeat;
+
+	.top {
+		padding: 75px 50px;
+
+		.logo {
+			float: left;
+		}
+
+		.contact {
+			float: right;
+			text-align: right;
+		}
+
+		.top-phone {
+			color: #fff;
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 30px;
+			padding-top: 10px;
+		}
+
+		.btn-callback {
+			font-size: 12px;
+			font-weight: 600;
+			line-height: 14px;
+			color: $color-yellow;
+			display: inline-block;
+			text-decoration: none;
+			text-transform: uppercase;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+
+	h1 {
+		font-size: 100px;
+		line-height: 100px;
+		text-align: center;
+		color: $color-yellow;
+		font-family: $font-cursive;
+	}
+
+	.text-large {
+		color: #fff;
+		font-size: 70px;
+		font-weight: 900;
+		line-height: 80px;
+		text-align: center;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+
+	.text-line {
+		font-size: 24px;
+		font-weight: 200;
+		line-height: 30px;
+		text-align: center;
+		margin-bottom: 25px;
+		text-transform: uppercase;
+		background: url("../img/b01_line.png") center center no-repeat;
+	}
+
+	.text {
+		font-size: 24px;
+		font-weight: 200;
+		line-height: 30px;
+		text-align: center;
+		margin-bottom: 140px;
+		text-transform: uppercase;
+	}
+
+	.btn-menu {
+		color: #fff;
+		cursor: pointer;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 20px;
+		padding-top: 40px;
+		display: inline-block;
+		text-decoration: none;
+		text-transform: uppercase;
+		background: url("../img/btn-down.png") top center no-repeat;
+
+		&:hover {
+			color: $color-yellow;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+.btn {
+	margin:0;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+	text-align: center;
+	position: relative;
+	padding: 15px 30px;
+	display: inline-block;
+	text-decoration: none;
+	vertical-align: middle;
+	background-image: none;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	@include border-radius(4px);
+	@include transition(.3s);
+
+	&:hover {
+		color: #fff;
+	}
+
+	&:active {
+		top: 1px;
+	}
+}
+
+
+.btn-orange {
+	background: #dc9122;
+
+	&:hover {
+		background: #dca444;
+	}
+}

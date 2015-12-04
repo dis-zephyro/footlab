@@ -1,0 +1,128 @@
+.b02 {
+	height: 900px;
+	padding-top: 60px;
+	background: url("../img/b02_bg.jpg") top center no-repeat;
+
+	h2 {
+		color: #fff;
+		position: relative;
+		margin-bottom: 5px;
+		padding-bottom: 15px;
+
+		&:before {
+			left: 50%;
+			bottom: 0;
+			content: '';
+			width: 160px;
+			height: 13px;
+			margin-left: -80px;
+			position: absolute;
+			background: url("../img/title-line.png") 0 0 no-repeat;
+		}
+	}
+
+	.sub-title {
+		font-size: 55px;
+		line-height: 60px;
+		text-align: center;
+		margin-bottom: 70px;
+		color: $color-yellow;
+		font-family: $font-cursive;
+	}
+
+	.how-it-works {
+		width: 1100px;
+		@include clearfix();
+
+		.col {
+			float: left;
+			width: 33.33%;
+			position: relative;
+			padding: 200px 15px 0 15px;
+
+			&.col-one {
+				background: url("../img/b02_item1.png") 30px 0 no-repeat;
+
+				&:before {
+					top: 70px;
+					right: 0;
+					content: ' ';
+					width: 135px;
+					height: 25px;
+					position: absolute;
+					background: url("../img/b02_arrow1.png") 0 0 no-repeat;
+				}
+			}
+
+			&.col-two {
+				background: url("../img/b02_item2.png") 20px 0 no-repeat;
+
+				&:before {
+					top: 70px;
+					right: -80px;
+					content: ' ';
+					width: 135px;
+					height: 25px;
+					position: absolute;
+					background: url("../img/b02_arrow2.png") 0 0 no-repeat;
+				}
+			}
+
+			&.col-three {
+				background: url("../img/b02_item3.png") top center no-repeat;
+			}
+		}
+
+		.col-title {
+			color: #464646;
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 20px;
+			margin-left: 30px;
+			margin-bottom: 25px;
+			text-transform: uppercase;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			li {
+				font-size: 15px;
+				line-height: 21px;
+				min-height: 30px;
+				padding-left: 45px;
+				margin-bottom: 35px;
+
+				&.item1 {
+					background: url("../img/b02_icon1.png") 0 0 no-repeat;
+				}
+
+				&.item2 {
+					background: url("../img/b02_icon2.png") 0 0 no-repeat;
+				}
+
+				&.item3 {
+					background: url("../img/b02_icon3.png") 0 0 no-repeat;
+				}
+
+				&.item4 {
+					background: url("../img/b02_icon4.png") 0 0 no-repeat;
+				}
+
+				&.item5 {
+					background: url("../img/b02_icon5.png") 0 0 no-repeat;
+				}
+
+				&.item6 {
+					background: url("../img/b02_icon6.png") 0 0 no-repeat;
+				}
+
+				&.item7 {
+					background: url("../img/b02_icon7.png") 0 0 no-repeat;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,91 @@
+@font-face {
+	font-family:'PFDaVinciScriptPro';
+	src: url('../fonts/PFDaVinciScriptPro-Regular/PFDaVinciScriptPro-Regular_gdi.eot');
+	src: url('../fonts/PFDaVinciScriptPro-Regular/PFDaVinciScriptPro-Regular_gdi.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/PFDaVinciScriptPro-Regular/PFDaVinciScriptPro-Regular_gdi.woff') format('woff'),
+	url('../fonts/PFDaVinciScriptPro-Regular/PFDaVinciScriptPro-Regular_gdi.ttf') format('truetype'),
+	url('../fonts/PFDaVinciScriptPro-Regular/PFDaVinciScriptPro-Regular_gdi.svg#PFDaVinciScriptPro-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+
+@font-face {
+	font-family:'PFBeauSansPro';
+	src: url('../fonts/PFBeauSansPro-Thin/PFBeauSansPro-Thin_gdi.eot');
+	src: url('../fonts/PFBeauSansPro-Thin/PFBeauSansPro-Thin_gdi.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/PFBeauSansPro-Thin/PFBeauSansPro-Thin_gdi.woff') format('woff'),
+	url('../fonts/PFBeauSansPro-Thin/PFBeauSansPro-Thin_gdi.ttf') format('truetype'),
+	url('../fonts/PFBeauSansPro-Thin/PFBeauSansPro-Thin_gdi.svg#PFBeauSansPro-Thin') format('svg');
+	font-weight: 200;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+
+@font-face {
+	font-family:'PFBeauSansPro';
+	src: url('../fonts/PFBeauSansPro-Light/PFBeauSansPro-Light_gdi.eot');
+	src: url('../fonts/PFBeauSansPro-Light/PFBeauSansPro-Light_gdi.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/PFBeauSansPro-Light/PFBeauSansPro-Light_gdi.woff') format('woff'),
+	url('../fonts/PFBeauSansPro-Light/PFBeauSansPro-Light_gdi.ttf') format('truetype'),
+	url('../fonts/PFBeauSansPro-Light/PFBeauSansPro-Light_gdi.svg#PFBeauSansPro-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+
+@font-face {
+	font-family:'PFBeauSansPro';
+	src: url('../fonts/PFBeauSansPro-Regular/PFBeauSansPro-Regular_gdi.eot');
+	src: url('../fonts/PFBeauSansPro-Regular/PFBeauSansPro-Regular_gdi.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/PFBeauSansPro-Regular/PFBeauSansPro-Regular_gdi.woff') format('woff'),
+	url('../fonts/PFBeauSansPro-Regular/PFBeauSansPro-Regular_gdi.ttf') format('truetype'),
+	url('../fonts/PFBeauSansPro-Regular/PFBeauSansPro-Regular_gdi.svg#PFBeauSansPro-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+
+@font-face {
+	font-family:'PFBeauSansPro';
+	src: url('../fonts/PFBeauSansPro-SemiBold/PFBeauSansPro-SemiBold_gdi.eot');
+	src: url('../fonts/PFBeauSansPro-SemiBold/PFBeauSansPro-SemiBold_gdi.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/PFBeauSansPro-SemiBold/PFBeauSansPro-SemiBold_gdi.woff') format('woff'),
+	url('../fonts/PFBeauSansPro-SemiBold/PFBeauSansPro-SemiBold_gdi.ttf') format('truetype'),
+	url('../fonts/PFBeauSansPro-SemiBold/PFBeauSansPro-SemiBold_gdi.svg#PFBeauSansPro-SemiBold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+
+@font-face {
+	font-family:'PFBeauSansPro';
+	src: url('../fonts/PFBeauSansPro-Bold/PFBeauSansPro-Bold_gdi.eot');
+	src: url('../fonts/PFBeauSansPro-Bold/PFBeauSansPro-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/PFBeauSansPro-Bold/PFBeauSansPro-Bold_gdi.woff') format('woff'),
+	url('../fonts/PFBeauSansPro-Bold/PFBeauSansPro-Bold_gdi.ttf') format('truetype'),
+	url('../fonts/PFBeauSansPro-Bold/PFBeauSansPro-Bold_gdi.svg#PFBeauSansPro-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+
+@font-face {
+	font-family:'PFBeauSansPro';
+	src: url('../fonts/PFBeauSansPro-Black/PFBeauSansPro-Black_gdi.eot');
+	src: url('../fonts/PFBeauSansPro-Black/PFBeauSansPro-Black_gdi.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/PFBeauSansPro-Black/PFBeauSansPro-Black_gdi.woff') format('woff'),
+	url('../fonts/PFBeauSansPro-Black/PFBeauSansPro-Black_gdi.ttf') format('truetype'),
+	url('../fonts/PFBeauSansPro-Black/PFBeauSansPro-Black_gdi.svg#PFBeauSansPro-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+

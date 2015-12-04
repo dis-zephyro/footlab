@@ -1,0 +1,133 @@
+.b08 {
+	color: #fff;
+	height: 880px;
+	background: url("../img/b08_bg.jpg") top center no-repeat;
+
+	.container {
+		height: 100%;
+		padding-top: 90px;
+	}
+
+	.top-title {
+		background: url("../img/title-line_dark.png") 50% 100% no-repeat;
+	}
+
+	h2 {
+		color: #fff;
+		font-size: 40px;
+		line-height: 40px;
+		margin-bottom: 80px;
+	}
+
+	.box {
+		width: 630px;
+
+		.box-title {
+			font-size: 24px;
+			line-height: 36px;
+			font-weight: 200;
+			margin-bottom: 30px;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		li {
+			height: 90px;
+			position: relative;
+			padding-left: 220px;
+			margin-bottom: 20px;
+			background: url("../img/icon-list.png") 25px 50% no-repeat;
+
+			.circle {
+				top: 0;
+				left: 95px;
+				width: 90px;
+				height: 90px;
+				font-size: 40px;
+				font-weight: 700;
+				line-height: 90px;
+				position: absolute;
+				text-align: center;
+				color: $color-yellow;
+			}
+
+			.item-text {
+				font-size: 18px;
+				line-height: 24px;
+			}
+
+			&.item1 {
+				padding-top: 30px;
+
+				&:before {
+					top: 60px;
+					left: 35px;
+					width: 1px;
+					height: 80px;
+					content: ' ';
+					position: absolute;
+					background: #272727;
+				}
+
+				.circle {
+					background: url("../img/b08_item1.png") 0 0 no-repeat;
+				}
+			}
+
+			&.item2 {
+
+				&:before {
+					top: 60px;
+					left: 35px;
+					width: 1px;
+					height: 80px;
+					content: ' ';
+					position: absolute;
+					background: #272727;
+				}
+
+				.circle {
+					background: url("../img/b08_item2.png") 0 0 no-repeat;
+				}
+			}
+
+			&.item3 {
+				padding-top: 30px;
+				background: url("../img/icon-ok.png") 25px 50% no-repeat;
+
+				.circle {
+					background: url("../img/b08_item3.png") 0 0 no-repeat;
+				}
+			}
+		}
+	}
+
+	.bottom-group {
+		left: 0;
+		bottom: 40px;
+		width: 100%;
+		z-index: 100;
+		text-align: left;
+		position: absolute;
+
+		.bottom-group-text {
+			color: #ddd;
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 20px;
+			position: relative;
+			margin-bottom: 20px;
+			padding: 5px 5px 5px 45px;
+			text-transform: uppercase;
+			background: url("../img/icon-alert.png") 0 3px no-repeat;
+		}
+
+		.btn {
+			margin-left: 100px;
+		}
+	}
+}
