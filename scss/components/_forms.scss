@@ -19,22 +19,6 @@
 		height: 0;
 	}
 
-	&.invert {
-		color: #5b646e;
-		border-color: #5b646e;
-		@include placeholder(#5b646e);
-	}
-}
-
-.red {
-
-	.form-control {
-		border-color: #ff0000;
-
-		&.invert {
-			border-color: #ff0000;
-		}
-	}
 }
 
 
@@ -44,6 +28,152 @@ label {
 	display: block;
 }
 
-.form-group {
-	margin-bottom: 20px;
+
+.order-form {
+	z-index: 100;
+	margin: 0 10px;
+	padding: 30px 40px;
+	background: #f6f6f6;
+	position: relative;
+	border: 1px solid #ebebeb;
+	@include border-radius(14px);
+	@include box-shadow(0px 5px 5px 0px rgba(205, 205, 205, 1));
+
+	&.callback {
+		margin: 0;
+		@include border-radius(0);
+		@include box-shadow(none);
+	}
+
+	.order-form-title {
+		color: #000;
+		font-size: 28px;
+		font-weight: 900;
+		line-height: 30px;
+		text-align: center;
+		padding-bottom: 15px;
+		text-transform: uppercase;
+		margin: 0 -20px 12px -20px;
+		background: url("../img/order-form-arrow.png") 50% 100% no-repeat;
+	}
+
+	ol {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			position: relative;
+			margin-bottom: 10px;
+		}
+
+		select,
+		input[type='text'] {
+			margin: 0;
+			width: 100%;
+			color: #888;
+			outline: none;
+			font-size: 17px;
+			font-weight: 200;
+			background: #fff;
+			line-height: 20px;
+			padding: 9px 10px;
+			text-align: center;
+			display: inline-block;
+			border: 1px solid #dcdcdc;
+			@include placeholder(#888);
+
+			&::-ms-clear {
+				display: none;
+				width: 0;
+				height: 0;
+			}
+
+			&:focus {
+				@include placeholder(transparent);
+			}
+		}
+
+		select {
+			background: #fff url("../img/select-arrow.png") 100% 50% no-repeat;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			text-indent: 0.01px;
+			text-overflow: '';
+			-ms-appearance: none;
+			appearance: none!important;
+
+
+			&::-ms-expand {
+				display: none;
+			}
+		}
+	}
+
+	label {
+
+	}
+
+	.slice {
+
+		.icr-label {
+			font-size: 9px;
+		}
+	}
+}
+
+// Checkbox
+
+.icr-label {
+	width: 25px;
+	height: 25px;
+	color: #000;
+	margin: 0 3px;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 22px;
+	text-align: center;
+	display: inline-block;
+	border: 1px solid $color-yellow;
+	@include border-radius(50%);
+
+	.icr-hidden {
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		display: block;
+		overflow: hidden;
+		position: absolute;
+	}
+
+	.icr-text {
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.icr-item {
+		display: none;
+	}
+
+	&.checked {
+		color: #fff;
+		background: $color-yellow;
+	}
+
+}
+
+
+
+.btn_close {
+	top: -45px;
+	right: -84px;
+	width: 57px;
+	height: 57px;
+	cursor: pointer;
+	position: absolute;
+	background: url("../img/icon_close.png") 0 0 no-repeat;
 }

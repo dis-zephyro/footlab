@@ -1,0 +1,105 @@
+.footer {
+	color: #fff;
+	height: 260px;
+	background: #181818;
+	border-top: 1px solid $color-yellow;
+
+	.footer-top {
+		height: 182px;
+		padding-top: 40px;
+	}
+
+	.left-col {
+		width: 50%;
+		float: left;
+	}
+
+	.right-col {
+		width: 50%;
+		float: right;
+		text-align: right;
+	}
+
+	.footer-text {
+		font-size: 30px;
+		font-weight: 900;
+		line-height: 30px;
+		margin-bottom: 30px;
+		text-transform: uppercase;
+	}
+
+	.footer-phone {
+		color: #fff;
+		font-size: 24px;
+		font-weight: 900;
+		line-height: 30px;
+		margin-bottom: 10px;
+		display: inline-block;
+		text-decoration: none;
+	}
+
+	.footer-email {
+		color: #888;
+		font-size: 20px;
+		line-height: 20px;
+		padding-left: 30px;
+		display: inline-block;
+		text-decoration: none;
+		background: url("../img/icon-mail.png") left center no-repeat;
+	}
+
+	.footer-bottom {
+		padding-top: 25px;
+		border-top: 1px solid #464646;
+	}
+
+	.footer-nav {
+		margin: 0;
+		padding: 0;
+		float: left;
+		list-style: none;
+
+		li {
+			float: left;
+			margin-right: 35px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			a {
+				color: #888;
+				font-size: 14px;
+				line-height: 20px;
+				text-decoration: none;
+
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.footer-social {
+		margin: 0;
+		padding: 0;
+		float: right;
+		list-style: none;
+
+		li {
+			float: left;
+			margin-left: 20px;
+
+			a {
+				color: #888;
+				font-size: 20px;
+				line-height: 24px;
+				text-decoration: none;
+
+				&:hover {
+					color: $color-yellow;
+				}
+			}
+		}
+	}
+}

@@ -21,7 +21,7 @@
     
     <body>
 
-        <section class="b01">
+        <section class="b01" id="b01">
             <div class="container">
                 <div class="top clearfix">
                     <div class="logo">
@@ -37,12 +37,12 @@
                 <div class="text-line">от шеф-повара</div>
                 <div class="text">готовьте за 40 минут - без походов в магазин</div>
                 <div class="text-center">
-                    <a href="#" class="btn-menu">Меню на следующую неделю</a>
+                    <a href="#b09" class="btn-menu btn-scroll">Меню на следующую неделю</a>
                 </div>
             </div>
         </section>
 
-        <section class="b02">
+        <section class="b02" id="b02">
             <div class="container">
                 <h2>Как это работает?</h2>
                 <div class="sub-title">Все очень просто!</div>
@@ -75,7 +75,7 @@
             </div>
         </section>
 
-        <section class="b03">
+        <section class="b03" id="b03">
             <div class="container">
                 <div class="top-title">Foodlab</div>
                 <h2>Это вкусно!</h2>
@@ -112,11 +112,11 @@
             </div>
             <div class="bottom-group">
                 <div class="bottom-group-text">Пробуйте новые блюда каждый день с food lab</div>
-                <a href="#" class="btn btn-orange">Попробовать Foodlab</a>
+                <a href="#trial" class="btn btn-orange btn-scroll">Попробовать Foodlab</a>
             </div>
         </section>
 
-        <section class="b04">
+        <section class="b04" id="b04">
             <div class="container">
                 <div class="top-title">Foodlab</div>
                 <h2>Экономим Ваше время!</h2>
@@ -156,7 +156,7 @@
             </div>
         </section>
 
-        <section class="b05">
+        <section class="b05" id="b05">
             <div class="container">
                 <div class="top-title">Foodlab</div>
                 <h2>вы экономите</h2>
@@ -177,11 +177,11 @@
             <div class="bottom-group">
                 <div class="bottom-group-text">Это время, которые вы можете провести со своей семьей,<br/>друзьями или потратить на любимое занятие!
                 </div>
-                <a href="#" class="btn btn-orange">Начать экономить время</a>
+                <a href="#trial" class="btn btn-orange btn-scroll">Начать экономить время</a>
             </div>
         </section>
 
-        <section class="b06">
+        <section class="b06" id="b06">
             <div class="container">
                 <div class="top-title">Foodlab</div>
                 <h2>Всегда свежее и полезное!</h2>
@@ -194,7 +194,7 @@
             </div>
         </section>
 
-        <section class="b07">
+        <section class="b07" id="b07">
             <div class="container">
                 <div class="top-title">Foodlab</div>
                 <h2>А самое главное - это нравится людям</h2>
@@ -238,11 +238,11 @@
             </div>
             <div class="bottom-group">
                 <div class="bottom-group-text"> </div>
-                <a href="#" class="btn btn-orange">Начать экономить время</a>
+                <a href="#trial" class="btn btn-orange btn-scroll">попробовать Foodlab</a>
             </div>
         </section>
 
-        <section class="b08">
+        <section class="b08" id="b08">
             <div class="container">
                 <div class="top-title">Foodlab</div>
                 <h2>Выиграйте мастер класс от Шефа</h2>
@@ -265,44 +265,755 @@
                 </div>
                 <div class="bottom-group">
                     <div class="bottom-group-text">Учувствуйте в розыгрыше каждую неделю</div>
-                    <a href="#" class="btn btn-orange">Видео с прошлого мастер класса</a>
+                    <a href="https://youtu.be/FQD9nU5kmFY" class="btn btn-orange btn-modal fancybox.iframe">Видео с прошлого мастер класса</a>
                 </div>
             </div>
         </section>
 
-
-        <section class="b09">
+        <section class="b09" id="b09">
             <div class="container">
                 <div class="top-title">Foodlab</div>
                 <h2>Меню от шеф повара на<br/>следующую неделю</h2>
                 <div class="carte clearfix">
-                    <ul class="carte-menu clearfix">
-                        <li></li>
+                    <ul class="carte-nav clearfix">
+                        <li class="carte-nav-1">
+                            <img class="carte-nav-img" src="img/carte-nav-01.png" alt="">
+                            <div class="carte-nav-title">Домашнее</div>
+                            <div class="carte-nav-text">Для тех кто любит вкусно покушать</div>
+                            <a href="#carte-home"></a>
+                        </li>
+                        <li class="carte-nav-2">
+                            <img class="carte-nav-img" src="img/carte-nav-02.png" alt="">
+                            <div class="carte-nav-title">Фитнес</div>
+                            <div class="carte-nav-text">Для тех кто любит заниматся спортом</div>
+                            <a href="#carte-fitt"></a>
+                        </li>
+                        <li class="carte-nav-3">
+                            <img class="carte-nav-img" src="img/carte-nav-03.png" alt="">
+                            <div class="carte-nav-title">Национальное</div>
+                            <div class="carte-nav-text">Для ценителей национальной кухни</div>
+                            <a href="#carte-nation"></a>
+                        </li>
                     </ul>
+                    <div class="carte-body">
+                        <div class="carte-content" id="carte-home">
+                            <div class="carte-title">
+                                <div class="carte-date"><span>5-9</span> октября</div>
+                                <span>Итальянская неделя на Foodlab</span>
+                            </div>
+
+                            <div class="chef clearfix">
+                                <div class="chef-image">
+                                    <img src="images/chef.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="chef-text">
+                                    <div class="chef-title">Комментарий шефа к этой неделе:</div>
+                                    <p>Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. Используется он веб-дизайнерами для вставки на интернет-страницы и демонстрации внешнего вида контента, просмотра шрифтов, абзацев, отступов и т.д. Так как цель применения такого текста исключительно демонстрационная, то и смысловую нагрузку ему нести совсем необязательно.</p>
+                                </div>
+                            </div>
+
+                            <ul class="food clearfix">
+                                <li>
+                                    <div class="food-header">
+                                        <a href="images/food01.png" class="food-image btn-modal">
+                                            <img class="img-responsive" src="images/food01.png" alt="">
+                                        </a>
+                                        <div class="food-day"><span>1</span>-й день</div>
+                                        <div class="food-title">
+                                            <span>Название блюда</span>
+                                        </div>
+                                    </div>
+                                    <div class="food-text">
+                                        <p>
+                                            <span class="text-gray">Описание:</span> Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов.
+                                        </p>
+                                        <ul class="food-info">
+                                            <li><span class="text-gray">Ингридиенты:</span> Лук, морковь, сыр чедр, ещё лук и морковь</li>
+                                            <li><span class="text-gray">Калории:</span> 450/порциявремя</li>
+                                            <li><span class="text-gray">Приготовления:</span> 35 мин</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="food-header">
+                                        <a href="images/food01.png" class="food-image btn-modal">
+                                            <img class="img-responsive" src="images/food01.png" alt="">
+                                        </a>
+                                        <div class="food-day"><span>1</span>-й день</div>
+                                        <div class="food-title">
+                                            <span>Название блюда</span>
+                                        </div>
+                                    </div>
+                                    <div class="food-text">
+                                        <p>
+                                            <span class="text-gray">Описание:</span> Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов.
+                                        </p>
+                                        <ul class="food-info">
+                                            <li><span class="text-gray">Ингридиенты:</span> Лук, морковь, сыр чедр, ещё лук и морковь</li>
+                                            <li><span class="text-gray">Калории:</span> 450/порциявремя</li>
+                                            <li><span class="text-gray">Приготовления:</span> 35 мин</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="food-header">
+                                        <a href="images/food01.png" class="food-image btn-modal">
+                                            <img class="img-responsive" src="images/food01.png" alt="">
+                                        </a>
+                                        <div class="food-day"><span>1</span>-й день</div>
+                                        <div class="food-title">
+                                            <span>Название блюда</span>
+                                        </div>
+                                    </div>
+                                    <div class="food-text">
+                                        <p>
+                                            <span class="text-gray">Описание:</span> Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов.
+                                        </p>
+                                        <ul class="food-info">
+                                            <li><span class="text-gray">Ингридиенты:</span> Лук, морковь, сыр чедр, ещё лук и морковь</li>
+                                            <li><span class="text-gray">Калории:</span> 450/порциявремя</li>
+                                            <li><span class="text-gray">Приготовления:</span> 35 мин</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="food clearfix">
+                                <li>
+                                    <div class="food-header">
+                                        <a href="images/food01.png" class="food-image btn-modal">
+                                            <img class="img-responsive" src="images/food01.png" alt="">
+                                        </a>
+                                        <div class="food-day"><span>1</span>-й день</div>
+                                        <div class="food-title">
+                                            <span>Название блюда</span>
+                                        </div>
+                                    </div>
+                                    <div class="food-text">
+                                        <p>
+                                            <span class="text-gray">Описание:</span> Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов.
+                                        </p>
+                                        <ul class="food-info">
+                                            <li><span class="text-gray">Ингридиенты:</span> Лук, морковь, сыр чедр, ещё лук и морковь</li>
+                                            <li><span class="text-gray">Калории:</span> 450/порциявремя</li>
+                                            <li><span class="text-gray">Приготовления:</span> 35 мин</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="food-header">
+                                        <a href="images/food01.png" class="food-image btn-modal">
+                                            <img class="img-responsive" src="images/food01.png" alt="">
+                                        </a>
+                                        <div class="food-day"><span>1</span>-й день</div>
+                                        <div class="food-title">
+                                            <span>Название блюда</span>
+                                        </div>
+                                    </div>
+                                    <div class="food-text">
+                                        <p>
+                                            <span class="text-gray">Описание:</span> Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов.
+                                        </p>
+                                        <ul class="food-info">
+                                            <li><span class="text-gray">Ингридиенты:</span> Лук, морковь, сыр чедр, ещё лук и морковь</li>
+                                            <li><span class="text-gray">Калории:</span> 450/порциявремя</li>
+                                            <li><span class="text-gray">Приготовления:</span> 35 мин</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order-form">
+                                        <div class="order-form-title">Оформить заказ</div>
+                                        <form enctype="multipart/form-data" method="post" class="cform mini form">
+                                            <ol class="cf-ol">
+                                                <li>
+                                                    <input type="text" name="cf8_field_1" class="single" value="" placeholder="Имя"/>
+                                                </li>
+                                                <li>
+                                                    <input type="text" name="cf8_field_2" class="single" value="" placeholder="Телефон"/>
+                                                </li>
+                                                <li>
+                                                    <input type="text" name="cf8_field_3" class="single" value="" placeholder="Адрес доставки"/>
+                                                </li>
+                                                <li>
+                                                    <span>Количество ужинов:</span>
+                                                    <label><input type="radio" name="dinner" checked>3</label>
+                                                    <span>дня</span>
+                                                    <label><input type="radio" name="dinner">5</label>
+                                                    <span>дней</span>
+                                                </li>
+                                                <li>
+                                                    <select>
+                                                        <option>Количество порций</option>
+                                                        <option>1 порция</option>
+                                                        <option>2 порции</option>
+                                                        <option>3 порции</option>
+                                                        <option>4 порции</option>
+                                                    </select>
+                                                </li>
+                                                <li class="slice">
+                                                    <span>Нарезать продукты:</span>
+                                                    <label>
+                                                        <input type="radio" name="slice" checked>
+                                                        <span class="choice">да</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="slice">
+                                                        <span class="choice">нет</span>
+                                                    </label>
+                                                </li>
+                                            </ol>
+                                            <p class="cf-sb">
+                                                <input type="submit" name="sendbutton8" class="sendbutton" value="Заказать набор продуктов  " onclick="return cforms_validate('8', false)"/>
+                                            </p>
+                                        </form>
+                                    </div>
+                                    <div class="order-form-summary">Итого: <span class="summ">3750</span> руб.</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="carte-content" id="carte-fitt">
+
+                            <div class="carte-title">
+                                <div class="carte-date"><span>5-9</span> октября</div>
+                                <span>Японская неделя на Foodlab</span>
+                            </div>
+
+                            <div class="chef clearfix">
+                                <div class="chef-image">
+                                    <img src="images/chef.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="chef-text">
+                                    <div class="chef-title">Комментарий шефа к этой неделе:</div>
+                                    <p>Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. Используется он веб-дизайнерами для вставки на интернет-страницы и демонстрации внешнего вида контента, просмотра шрифтов, абзацев, отступов и т.д. Так как цель применения такого текста исключительно демонстрационная, то и смысловую нагрузку ему нести совсем необязательно.</p>
+                                </div>
+                            </div>
+
+                            <ul class="food clearfix">
+                                <li>
+                                    <div class="food-header">
+                                        <a href="images/food01.png" class="food-image btn-modal">
+                                            <img class="img-responsive" src="images/food01.png" alt="">
+                                        </a>
+                                        <div class="food-day"><span>1</span>-й день</div>
+                                        <div class="food-title">
+                                            <span>Название блюда</span>
+                                        </div>
+                                    </div>
+                                    <div class="food-text">
+                                        <p>
+                                            <span class="text-gray">Описание:</span> Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов.
+                                        </p>
+                                        <ul class="food-info">
+                                            <li><span class="text-gray">Ингридиенты:</span> Лук, морковь, сыр чедр, ещё лук и морковь</li>
+                                            <li><span class="text-gray">Калории:</span> 450/порциявремя</li>
+                                            <li><span class="text-gray">Приготовления:</span> 35 мин</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="food-header">
+                                        <a href="images/food01.png" class="food-image btn-modal">
+                                            <img class="img-responsive" src="images/food01.png" alt="">
+                                        </a>
+                                        <div class="food-day"><span>1</span>-й день</div>
+                                        <div class="food-title">
+                                            <span>Название блюда</span>
+                                        </div>
+                                    </div>
+                                    <div class="food-text">
+                                        <p>
+                                            <span class="text-gray">Описание:</span> Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов.
+                                        </p>
+                                        <ul class="food-info">
+                                            <li><span class="text-gray">Ингридиенты:</span> Лук, морковь, сыр чедр, ещё лук и морковь</li>
+                                            <li><span class="text-gray">Калории:</span> 450/порциявремя</li>
+                                            <li><span class="text-gray">Приготовления:</span> 35 мин</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="food-header">
+                                        <a href="images/food01.png" class="food-image btn-modal">
+                                            <img class="img-responsive" src="images/food01.png" alt="">
+                                        </a>
+                                        <div class="food-day"><span>1</span>-й день</div>
+                                        <div class="food-title">
+                                            <span>Название блюда</span>
+                                        </div>
+                                    </div>
+                                    <div class="food-text">
+                                        <p>
+                                            <span class="text-gray">Описание:</span> Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов.
+                                        </p>
+                                        <ul class="food-info">
+                                            <li><span class="text-gray">Ингридиенты:</span> Лук, морковь, сыр чедр, ещё лук и морковь</li>
+                                            <li><span class="text-gray">Калории:</span> 450/порциявремя</li>
+                                            <li><span class="text-gray">Приготовления:</span> 35 мин</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="food clearfix">
+                                <li>
+                                    <div class="food-header">
+                                        <a href="images/food01.png" class="food-image btn-modal">
+                                            <img class="img-responsive" src="images/food01.png" alt="">
+                                        </a>
+                                        <div class="food-day"><span>1</span>-й день</div>
+                                        <div class="food-title">
+                                            <span>Название блюда</span>
+                                        </div>
+                                    </div>
+                                    <div class="food-text">
+                                        <p>
+                                            <span class="text-gray">Описание:</span> Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов.
+                                        </p>
+                                        <ul class="food-info">
+                                            <li><span class="text-gray">Ингридиенты:</span> Лук, морковь, сыр чедр, ещё лук и морковь</li>
+                                            <li><span class="text-gray">Калории:</span> 450/порциявремя</li>
+                                            <li><span class="text-gray">Приготовления:</span> 35 мин</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="food-header">
+                                        <a href="images/food01.png" class="food-image btn-modal">
+                                            <img class="img-responsive" src="images/food01.png" alt="">
+                                        </a>
+                                        <div class="food-day"><span>1</span>-й день</div>
+                                        <div class="food-title">
+                                            <span>Название блюда</span>
+                                        </div>
+                                    </div>
+                                    <div class="food-text">
+                                        <p>
+                                            <span class="text-gray">Описание:</span> Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов.
+                                        </p>
+                                        <ul class="food-info">
+                                            <li><span class="text-gray">Ингридиенты:</span> Лук, морковь, сыр чедр, ещё лук и морковь</li>
+                                            <li><span class="text-gray">Калории:</span> 450/порциявремя</li>
+                                            <li><span class="text-gray">Приготовления:</span> 35 мин</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order-form">
+                                        <div class="order-form-title">Оформить заказ</div>
+                                        <form enctype="multipart/form-data" method="post" class="cform mini form">
+                                            <ol class="cf-ol">
+                                                <li>
+                                                    <input type="text" name="cf8_field_1" class="single" value="" placeholder="Имя"/>
+                                                </li>
+                                                <li>
+                                                    <input type="text" name="cf8_field_2" class="single" value="" placeholder="Телефон"/>
+                                                </li>
+                                                <li>
+                                                    <input type="text" name="cf8_field_3" class="single" value="" placeholder="Адрес доставки"/>
+                                                </li>
+                                                <li>
+                                                    <span>Количество ужинов:</span>
+                                                    <label><input type="radio" name="dinner" checked>3</label>
+                                                    <span>дня</span>
+                                                    <label><input type="radio" name="dinner">5</label>
+                                                    <span>дней</span>
+                                                </li>
+                                                <li>
+                                                    <select>
+                                                        <option>Количество порций</option>
+                                                        <option>1 порция</option>
+                                                        <option>2 порции</option>
+                                                        <option>3 порции</option>
+                                                        <option>4 порции</option>
+                                                    </select>
+                                                </li>
+                                                <li class="slice">
+                                                    <span>Нарезать продукты:</span>
+                                                    <label>
+                                                        <input type="radio" name="slice" checked>
+                                                        <span class="choice">да</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="slice">
+                                                        <span class="choice">нет</span>
+                                                    </label>
+                                                </li>
+                                            </ol>
+                                            <p class="cf-sb">
+                                                <input type="submit" name="sendbutton8" class="sendbutton" value="Заказать набор продуктов  " onclick="return cforms_validate('8', false)"/>
+                                            </p>
+                                        </form>
+                                    </div>
+                                    <div class="order-form-summary">Итого: <span class="summ">3750</span> руб.</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="carte-content" id="carte-nation">
+
+                            <div class="carte-title">
+                                <div class="carte-date"><span>5-9</span> октября</div>
+                                <span>Мексиканская неделя на Foodlab</span>
+                            </div>
+
+                            <div class="chef clearfix">
+                                <div class="chef-image">
+                                    <img src="images/chef.png" class="img-responsive" alt="">
+                                </div>
+                                <div class="chef-text">
+                                    <div class="chef-title">Комментарий шефа к этой неделе:</div>
+                                    <p>Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. Используется он веб-дизайнерами для вставки на интернет-страницы и демонстрации внешнего вида контента, просмотра шрифтов, абзацев, отступов и т.д. Так как цель применения такого текста исключительно демонстрационная, то и смысловую нагрузку ему нести совсем необязательно.</p>
+                                </div>
+                            </div>
+
+                            <ul class="food clearfix">
+                                <li>
+                                    <div class="food-header">
+                                        <a href="images/food01.png" class="food-image btn-modal">
+                                            <img class="img-responsive" src="images/food01.png" alt="">
+                                        </a>
+                                        <div class="food-day"><span>1</span>-й день</div>
+                                        <div class="food-title">
+                                            <span>Название блюда</span>
+                                        </div>
+                                    </div>
+                                    <div class="food-text">
+                                        <p>
+                                            <span class="text-gray">Описание:</span> Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов.
+                                        </p>
+                                        <ul class="food-info">
+                                            <li><span class="text-gray">Ингридиенты:</span> Лук, морковь, сыр чедр, ещё лук и морковь</li>
+                                            <li><span class="text-gray">Калории:</span> 450/порциявремя</li>
+                                            <li><span class="text-gray">Приготовления:</span> 35 мин</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="food-header">
+                                        <a href="images/food01.png" class="food-image btn-modal">
+                                            <img class="img-responsive" src="images/food01.png" alt="">
+                                        </a>
+                                        <div class="food-day"><span>1</span>-й день</div>
+                                        <div class="food-title">
+                                            <span>Название блюда</span>
+                                        </div>
+                                    </div>
+                                    <div class="food-text">
+                                        <p>
+                                            <span class="text-gray">Описание:</span> Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов.
+                                        </p>
+                                        <ul class="food-info">
+                                            <li><span class="text-gray">Ингридиенты:</span> Лук, морковь, сыр чедр, ещё лук и морковь</li>
+                                            <li><span class="text-gray">Калории:</span> 450/порциявремя</li>
+                                            <li><span class="text-gray">Приготовления:</span> 35 мин</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="food-header">
+                                        <a href="images/food01.png" class="food-image btn-modal">
+                                            <img class="img-responsive" src="images/food01.png" alt="">
+                                        </a>
+                                        <div class="food-day"><span>1</span>-й день</div>
+                                        <div class="food-title">
+                                            <span>Название блюда</span>
+                                        </div>
+                                    </div>
+                                    <div class="food-text">
+                                        <p>
+                                            <span class="text-gray">Описание:</span> Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов.
+                                        </p>
+                                        <ul class="food-info">
+                                            <li><span class="text-gray">Ингридиенты:</span> Лук, морковь, сыр чедр, ещё лук и морковь</li>
+                                            <li><span class="text-gray">Калории:</span> 450/порциявремя</li>
+                                            <li><span class="text-gray">Приготовления:</span> 35 мин</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="food clearfix">
+                                <li>
+                                    <div class="food-header">
+                                        <a href="images/food01.png" class="food-image btn-modal">
+                                            <img class="img-responsive" src="images/food01.png" alt="">
+                                        </a>
+                                        <div class="food-day"><span>1</span>-й день</div>
+                                        <div class="food-title">
+                                            <span>Название блюда</span>
+                                        </div>
+                                    </div>
+                                    <div class="food-text">
+                                        <p>
+                                            <span class="text-gray">Описание:</span> Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов.
+                                        </p>
+                                        <ul class="food-info">
+                                            <li><span class="text-gray">Ингридиенты:</span> Лук, морковь, сыр чедр, ещё лук и морковь</li>
+                                            <li><span class="text-gray">Калории:</span> 450/порциявремя</li>
+                                            <li><span class="text-gray">Приготовления:</span> 35 мин</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="food-header">
+                                        <a href="images/food01.png" class="food-image btn-modal">
+                                            <img class="img-responsive" src="images/food01.png" alt="">
+                                        </a>
+                                        <div class="food-day"><span>1</span>-й день</div>
+                                        <div class="food-title">
+                                            <span>Название блюда</span>
+                                        </div>
+                                    </div>
+                                    <div class="food-text">
+                                        <p>
+                                            <span class="text-gray">Описание:</span> Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов.
+                                        </p>
+                                        <ul class="food-info">
+                                            <li><span class="text-gray">Ингридиенты:</span> Лук, морковь, сыр чедр, ещё лук и морковь</li>
+                                            <li><span class="text-gray">Калории:</span> 450/порциявремя</li>
+                                            <li><span class="text-gray">Приготовления:</span> 35 мин</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="order-form">
+                                        <div class="order-form-title">Оформить заказ</div>
+                                        <form enctype="multipart/form-data" method="post" class="cform mini form">
+                                            <ol class="cf-ol">
+                                                <li>
+                                                    <input type="text" name="cf8_field_1" class="single" value="" placeholder="Имя"/>
+                                                </li>
+                                                <li>
+                                                    <input type="text" name="cf8_field_2" class="single" value="" placeholder="Телефон"/>
+                                                </li>
+                                                <li>
+                                                    <input type="text" name="cf8_field_3" class="single" value="" placeholder="Адрес доставки"/>
+                                                </li>
+                                                <li>
+                                                    <span>Количество ужинов:</span>
+                                                    <label><input type="radio" name="dinner" checked>3</label>
+                                                    <span>дня</span>
+                                                    <label><input type="radio" name="dinner">5</label>
+                                                    <span>дней</span>
+                                                </li>
+                                                <li>
+                                                    <select>
+                                                        <option>Количество порций</option>
+                                                        <option>1 порция</option>
+                                                        <option>2 порции</option>
+                                                        <option>3 порции</option>
+                                                        <option>4 порции</option>
+                                                    </select>
+                                                </li>
+                                                <li class="slice">
+                                                    <span>Нарезать продукты:</span>
+                                                    <label>
+                                                        <input type="radio" name="slice" checked>
+                                                        <span class="choice">да</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="slice">
+                                                        <span class="choice">нет</span>
+                                                    </label>
+                                                </li>
+                                            </ol>
+                                            <p class="cf-sb">
+                                                <input type="submit" name="sendbutton8" class="sendbutton" value="Заказать набор продуктов  " onclick="return cforms_validate('8', false)"/>
+                                            </p>
+                                        </form>
+                                    </div>
+                                    <div class="order-form-summary">Итого: <span class="summ">3750</span> руб.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="b10">
+        <section class="b10" id="b10">
             <div class="container">
+                <div class="top-title">Foodlab</div>
+                <h2>Оплата и доставка</h2>
+                <div class="box-one clearfix">
+                    <ul class="payment">
+                        <li class="item1">Наличными курьеру</li>
+                        <li class="item2">Оплата банковской картой через терминал курьера</li>
+                        <li class="item3">Через интернет с помощью удобной платежной системы</li>
+                        <li>
+                            <ul class="clearfix">
+                                <li><img src="img/payment-mc.png"></li>
+                                <li><img src="img/payment-quiwi.png"></li>
+                                <li><img src="img/payment-yad.png"></li>
+                                <li><img src="img/payment-visa.png"></li>
+                                <li><img src="img/payment-wm.png"></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="box-one-image">
+                        <img src="img/b10_food.png" alt="">
+                    </div>
 
-            </div>
-        </section>
-
-        <section class="b11">
-            <div class="container">
-
+                    <ul class="shipping">
+                        <li class="item1">Осуществляется курьером лично в руки</li>
+                        <li class="item2">Производится в сумках холодильниках что бы продукты всегда оставались свежими</li>
+                        <li class="item3">Осуществляется в воскресеньям в удобное для Вас время с 09:00 до 22:00</li>
+                    </ul>
+                </div>
+                <div class="top-title">Foodlab</div>
+                <h2>Хотите попробoвать?</h2>
+                <div class="text1">Два вкуснейших ужина от Шеф повара</div>
+                <div class="text2">на <strong class="text-orange">2 человек</strong> а всего за <strong class="text-orange">1390 руб.</strong></div>
+                <ul class="best-food clearfix">
+                    <li>
+                        <div class="food-header">
+                            <a href="images/food01.png" class="food-image btn-modal">
+                                <img class="img-responsive" src="images/food01.png" alt="">
+                            </a>
+                            <div class="food-title">
+                                <span>Название блюда</span>
+                            </div>
+                        </div>
+                        <div class="food-text">
+                            <p>
+                                <span class="text-gray">Описание:</span> Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов.
+                            </p>
+                            <ul class="food-info">
+                                <li><span class="text-gray">Ингридиенты:</span> Лук, морковь, сыр чедр, ещё лук и морковь</li>
+                                <li><span class="text-gray">Калории:</span> 450/порциявремя</li>
+                                <li><span class="text-gray">Приготовления:</span> 35 мин</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="food-header">
+                            <a href="images/food01.png" class="food-image btn-modal">
+                                <img class="img-responsive" src="images/food01.png" alt="">
+                            </a>
+                            <div class="food-title">
+                                <span>Название блюда</span>
+                            </div>
+                        </div>
+                        <div class="food-text">
+                            <p>
+                                <span class="text-gray">Описание:</span> Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов.
+                            </p>
+                            <ul class="food-info">
+                                <li><span class="text-gray">Ингридиенты:</span> Лук, морковь, сыр чедр, ещё лук и морковь</li>
+                                <li><span class="text-gray">Калории:</span> 450/порциявремя</li>
+                                <li><span class="text-gray">Приготовления:</span> 35 мин</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="first-order-form" id="trial">
+                    <div class="first-order-form-inner">
+                        <div class="order-form-title">Форма заказа<span>первого ужина от foodlab</span></div>
+                        <form enctype="multipart/form-data" method="post" class="cform mini form">
+                            <ol class="cf-ol">
+                                <li>
+                                    <input type="text" name="cf8_field_1" class="single" value="" placeholder="Имя"/>
+                                </li>
+                                <li>
+                                    <input type="text" name="cf8_field_2" class="single" value="" placeholder="Телефон"/>
+                                </li>
+                                <li>
+                                    <input type="text" name="cf8_field_3" class="single" value="" placeholder="Адрес доставки"/>
+                                </li>
+                                <li>
+                                    <span>Количество ужинов:</span>
+                                    <label><input type="radio" name="dinner" checked>3</label>
+                                    <span>дня</span>
+                                    <label><input type="radio" name="dinner">5</label>
+                                    <span>дней</span>
+                                </li>
+                                <li class="slice">
+                                    <span>Нарезать продукты:</span>
+                                    <label>
+                                        <input type="radio" name="slice" checked>
+                                        <span class="choice">да</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="slice">
+                                        <span class="choice">нет</span>
+                                    </label>
+                                </li>
+                            </ol>
+                            <p class="cf-sb">
+                                <input type="submit" name="sendbutton8" class="sendbutton" value="Заказать набор продуктов  " onclick="return cforms_validate('8', false)"/>
+                            </p>
+                        </form>
+                        <div class="sup-text">от foodlab.club</div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <footer class="footer">
-            <div class="container"></div>
+            <div class="container">
+                <div class="footer-top clearfix">
+                    <div class="left-col">
+                        <div class="footer-text">Остались вопросы? <span class="text-orange">Звоните!</span></div>
+                        <a href="#">
+                            <img src="img/dev-logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="right-col">
+                        <a href="tel:>8 (495) 455-65-85" class="footer-phone">8 (495) 455-65-85</a>
+                        <br/>
+                        <a class="footer-email" href="mailto:info@foodlab.club">info@foodlab.club</a>
+                    </div>
+                </div>
+                <div class="footer-bottom clearfix">
+
+                    <ul class="footer-nav clearfix">
+                        <li><a href="">Команда</a></li>
+                        <li><a href="">Кухня</a></li>
+                        <li><a href="">о нас</a></li>
+                        <li><a href="">Партнерская программа</a></li>
+
+                    </ul>
+
+                    <ul class="footer-social clearfix">
+                        <li><a href=""><i class="fa fa-vk"></i></a></li>
+                        <li><a href=""><i class="fa fa-odnoklassniki"></i></a></li>
+                        <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
         </footer>
+
+        <div class="hide">
+            <div class="order-form callback" id="callback">
+                <div class="order-form-title">Обратный звонок</div>
+                <form enctype="multipart/form-data" method="post" class="cform mini form">
+                    <ol class="cf-ol">
+                        <li>
+                            <input type="text" name="cf8_field_1" class="single" value="" placeholder="Имя"/>
+                        </li>
+                        <li>
+                            <input type="text" name="cf8_field_2" class="single" value="" placeholder="Телефон"/>
+                        </li>
+                    </ol>
+                    <p class="cf-sb">
+                        <input type="submit" name="sendbutton8" class="sendbutton" value="Заказать обратный звонок" onclick="return cforms_validate('8', false)"/>
+                    </p>
+                </form>
+            </div>
+        </div>
+
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+        <script src="js/vendor/jquery.ui/jquery-ui.min.js"></script>
         <script src="js/vendor/slick/slick.min.js"></script>
+        <script src="js/vendor/ion.checkRadio.min.js"></script>
+        <script src="js/vendor/jquery.scrollTo.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

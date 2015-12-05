@@ -30,3 +30,24 @@ $('.reply-nav.prev').click(function(){
 $('.reply-nav.next').click(function(){
     $('.reply-slider').slick('slickNext');
 });
+
+
+$('.carte').tabs();
+
+$("input[type='radio']").ionCheckRadio();
+
+$('.btn-scroll').click(function(){
+    var str=$(this).attr('href');
+    $.scrollTo(str, 500, {offset: 0});
+    return false;
+});
+
+
+//  Modal
+
+$(".btn-modal").fancybox({
+    'padding'    : 0,
+    'tpl'        : {
+        closeBtn : '<a title="Close" class="btn_close" href="javascript:;"></a>'
+    }
+});

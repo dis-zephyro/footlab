@@ -15,4 +15,320 @@
 		line-height: 30px;
 		margin-bottom: 80px;
 	}
+
+	.carte {
+		width: 1140px;
+		margin: 0 auto;
+		position: relative;
+
+		.carte-nav {
+			padding: 0;
+			z-index: 100;
+			margin: 0;
+			list-style: none;
+
+			li {
+				float: left;
+				width: 360px;
+				height: 134px;
+				bottom: -14px;
+				position: relative;
+				padding: 22px 50px 25px 140px;
+
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				-ms-filter: grayscale(100%);
+				-o-filter: grayscale(100%);
+				filter: grayscale(100%);
+				filter: url(grayscale.svg#greyscale); /* Firefox 4+ */
+				filter: gray; /* IE 6-9 */
+
+				&:first-child {
+					margin-left: -10px;
+					margin-right: 50px;
+
+					&.ui-tabs-active {
+						background: url("../img/carte-nav-bg-first.png") 0 0 no-repeat;
+					}
+				}
+
+				&:last-child {
+					float: right;
+					margin-right: -24px;
+
+					&.ui-tabs-active {
+						background: url("../img/carte-nav-bg-last.png") 0 0 no-repeat;
+					}
+				}
+
+				.carte-nav-img {
+					top: 30px;
+					left: 50px;
+					display: block;
+					position: absolute;
+				}
+
+				.carte-nav-title {
+					font-size: 18px;
+					font-weight: 600;
+					line-height: 20px;
+					padding-left: 5px;
+					position: relative;
+					margin-bottom: 8px;
+					padding-bottom: 10px;
+					text-transform: uppercase;
+
+					&:before {
+						left: 0;
+						bottom: 0;
+						width: 40px;
+						height: 2px;
+						content: ' ';
+						position: absolute;
+						background: #cbcbcb;
+					}
+				}
+
+				.carte-nav-text {
+					color: #888;
+					font-size: 16px;
+					line-height: 22px;
+					padding-left: 5px;
+				}
+
+				a {
+					top: 0;
+					left: 10px;
+					right: 25px;
+					bottom: 14px;
+					cursor: pointer;
+					display: block;
+					position: absolute;
+				}
+
+				&.ui-tabs-active {
+					-webkit-filter: grayscale(0%);
+					-moz-filter: grayscale(0%);
+					-ms-filter: grayscale(0%);
+					-o-filter: grayscale(0%);
+					filter: none;
+					background: url("../img/carte-nav-bg.png") 0 0 no-repeat;
+
+					.carte-nav-title {
+
+						&:before {
+							background: $color-yellow;
+						}
+					}
+				}
+			}
+		}
+
+		.carte-body {
+			padding: 50px 40px 30px 40px;
+			background: rgba(255,255,255, 0.5);
+			@include border-radius(14px);
+			@include box-shadow(0px 5px 10px 0px rgba(205, 205, 205, 1));
+		}
+
+		.carte-title {
+			color: #000;
+			font-size: 22px;
+			font-weight: 200;
+			line-height: 30px;
+			text-align: center;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			background: url("../img/carte-title.png") center bottom no-repeat;
+
+			.carte-date {
+				font-size: 20px;
+				font-weight: 900;
+				line-height: 30px;
+
+				span {
+					font-size: 30px;
+				}
+			}
+		}
+
+		.chef {
+			margin: 0 50px 60px 50px;
+
+			.chef-image {
+				float: left;
+				width: 380px;
+			}
+
+			.chef-text {
+				color: #464646;
+				font-size: 16px;
+				line-height: 24px;
+				margin-left: 425px;
+				text-align: justify;
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+
+			.chef-title {
+				color: #000;
+				font-size: 17px;
+				font-weight: 600;
+				line-height: 20px;
+				position: relative;
+				margin-bottom: 10px;
+				padding-bottom: 18px;
+
+				&:before {
+					bottom: 0;
+					left: -10px;
+					width: 40px;
+					height: 2px;
+					content: ' ';
+					position: absolute;
+					background: #cbcbcb;
+				}
+			}
+		}
+
+		.food {
+			padding: 0;
+			list-style: none;
+			margin: 0 -20px 50px -65px;
+
+			> li {
+				float: left;
+				width: 33.33%;
+
+				&:first-child {
+
+					.food-text {
+						background: transparent;
+					}
+				}
+			}
+
+			.food-header {
+				position: relative;
+				margin-bottom: 10px;
+
+				.food-image {
+					width: 230px;
+					height: 230px;
+					display: block;
+					overflow: hidden;
+					position: relative;
+					margin-left: 10px;
+
+					&:hover {
+						position: relative;
+
+						&:before {
+							top: 50%;
+							left: 50%;
+							width: 31px;
+							height: 31px;
+							content: ' ';
+							display: block;
+							margin-top: -17px;
+							margin-left: -17px;
+							position: absolute;
+							background: url("../img/icon-loop.png") 0 0 no-repeat;
+						}
+					}
+				}
+
+				.food-day {
+					top: 160px;
+					left: 255px;
+					color: #888;
+					font-size: 14px;
+					font-weight: 600;
+					line-height: 30px;
+					position: absolute;
+
+					span {
+						font-size: 24px;
+					}
+				}
+
+				.food-title {
+					left: 70px;
+					bottom: 5px;
+					color: #fff;
+					width: 325px;
+					height: 93px;
+					display: table;
+					font-size: 16px;
+					font-weight: 600;
+					line-height: 20px;
+					padding: 8px 10px;
+					position: absolute;
+					text-align: center;
+					text-transform: uppercase;
+					background: url("../img/food-title-bg.png") 0 0 no-repeat;
+
+					span {
+						display: table-cell;
+						vertical-align: middle;
+					}
+				}
+			}
+
+			.food-text {
+				color: #464646;
+				font-size: 13px;
+				padding: 0 60px;
+				line-height: 20px;
+				position: relative;
+				background: url("../img/food-text-line.png") 0 100% no-repeat;
+
+				p {
+					margin-bottom: 20px;
+				}
+
+				.food-info {
+					margin: 0;
+					list-style: none;
+					position: relative;
+					padding: 20px 0 0 0;
+
+					&:before {
+						top: 0;
+						left: 0;
+						width: 200px;
+						height: 1px;
+						content: ' ';
+						position: absolute;
+						background: #ededed;
+					}
+
+					li {
+						margin-bottom: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	.order-form-summary {
+		z-index: 10;
+		width: 270px;
+		height: 65px;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 30px;
+		text-align: center;
+		background: #ebebeb;
+		margin: -10px auto 0 auto;
+		padding: 18px 20px 10px 20px;
+		border: 1px solid $color-yellow;
+		@include border-radius(0 0 8px 8px);
+
+		span {
+			font-size: 30px;
+		}
+	}
 }
