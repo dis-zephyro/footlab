@@ -1,0 +1,34 @@
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+
+.b05 .economy li.item1,
+.b05 .economy li.item2,
+.b05 .economy li.item3,
+.b05 .economy li.item4 {
+	opacity: 0;
+}
+
+.b05 .economy li.item1.animated {
+	-webkit-animation: zoomInLeft 2s .2s forwards;
+	animation: zoomInLeft 2s .2s forwards;
+}
+
+.b05 .economy li.item2.animated {
+	-webkit-animation: zoomInLeft 2s .2s forwards;
+	animation: zoomInLeft 2s .2s forwards;
+}
+
+.b05 .economy li.item3.animated {
+	-webkit-animation: zoomInRight 2s .2s forwards;
+	animation: zoomInRight 2s .2s forwards;
+}
+
+.b05 .economy li.item4.animated {
+	-webkit-animation: zoomInRight 2s .2s forwards;
+	animation: zoomInRight 2s .2s forwards;
+}

@@ -161,13 +161,13 @@
                 <div class="top-title">Foodlab</div>
                 <h2>вы экономите</h2>
                 <ul class="economy clearfix">
-                    <li class="item1">2</li>
-                    <li class="item2">11</li>
-                    <li class="item3">2</li>
-                    <li class="item4">36</li>
+                    <li class="item1 scroll">2</li>
+                    <li class="item2 scroll">11</li>
+                    <li class="item3 scroll">2</li>
+                    <li class="item4 scroll">36</li>
                 </ul>
 
-                <ul class="economy-text">
+                <ul class="economy-text scroll">
                     <li>часа в день</li>
                     <li>часов в неделю</li>
                     <li>дня в 2месяц</li>
@@ -421,7 +421,7 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li>
+                                <li class="calc">
                                     <div class="order-form">
                                         <div class="order-form-title">Оформить заказ</div>
                                         <form enctype="multipart/form-data" method="post" class="cform mini form">
@@ -437,28 +437,28 @@
                                                 </li>
                                                 <li>
                                                     <span>Количество ужинов:</span>
-                                                    <label><input type="radio" name="dinner" checked>3</label>
+                                                    <label><input type="radio" name="dinner" value="3">3</label>
                                                     <span>дня</span>
-                                                    <label><input type="radio" name="dinner">5</label>
+                                                    <label><input type="radio" name="dinner" value="5">5</label>
                                                     <span>дней</span>
                                                 </li>
                                                 <li>
-                                                    <select>
-                                                        <option>Количество порций</option>
-                                                        <option>1 порция</option>
-                                                        <option>2 порции</option>
-                                                        <option>3 порции</option>
-                                                        <option>4 порции</option>
+                                                    <select name="count">
+                                                        <option value="1">Количество порций</option>
+                                                        <option value="1">1 порция</option>
+                                                        <option value="2">2 порции</option>
+                                                        <option value="3">3 порции</option>
+                                                        <option value="4">4 порции</option>
                                                     </select>
                                                 </li>
                                                 <li class="slice">
                                                     <span>Нарезать продукты:</span>
                                                     <label>
-                                                        <input type="radio" name="slice" checked>
+                                                        <input type="radio" name="slice" value="1.1">
                                                         <span class="choice">да</span>
                                                     </label>
                                                     <label>
-                                                        <input type="radio" name="slice">
+                                                        <input type="radio" name="slice" value="1">
                                                         <span class="choice">нет</span>
                                                     </label>
                                                 </li>
@@ -924,7 +924,7 @@
                                 </li>
                                 <li>
                                     <span>Количество ужинов:</span>
-                                    <label><input type="radio" name="dinner" checked>3</label>
+                                    <label><input type="radio" name="dinner">3</label>
                                     <span>дня</span>
                                     <label><input type="radio" name="dinner">5</label>
                                     <span>дней</span>
@@ -932,7 +932,7 @@
                                 <li class="slice">
                                     <span>Нарезать продукты:</span>
                                     <label>
-                                        <input type="radio" name="slice" checked>
+                                        <input type="radio" name="slice">
                                         <span class="choice">да</span>
                                     </label>
                                     <label>
