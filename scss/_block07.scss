@@ -18,22 +18,52 @@
 	.reply {
 		position: relative;
 
-		.reply-slider {
+		.reply-avatar-inner {
+			width: 720px;
+			overflow: hidden;
+			margin: 0 auto 20px auto;
+		}
+
+		.reply-avatar {
+			width: 230px;
+			margin: 0 auto;
+
+			.reply-avatar-item {
+				outline: none;
+
+				.reply-image {
+					width: 130px;
+					margin: 50px auto;
+
+					outline: none;
+					@include opacity(0.4);
+				}
+
+
+				&.slick-current {
+
+					.reply-image {
+						width: 100%;
+						margin: 0;
+						@include opacity(1);
+					}
+				}
+			}
+			.slick-list {
+				overflow: visible;
+			}
+		}
+
+		.reply-source {
 			width: 940px;
-			height: 440px;
 			margin: 0 auto;
 			overflow: hidden;
 			padding-bottom: 50px;
 
-			.reply-item {
-				outline: none;
-			}
 		}
 
-		.reply-image {
-			width: 240px;
-			height: 240px;
-			margin: 0 auto 15px auto;
+		.reply-item {
+			outline: none;
 		}
 
 		.reply-author {
@@ -67,6 +97,10 @@
 			text-align: center;
 		}
 
+		.reply-slider {
+			position: relative;
+		}
+
 		.reply-nav {
 			width: 20px;
 			bottom: 60px;
@@ -97,10 +131,11 @@
 			}
 		}
 
+
 		.slick-dots {
 			left: 0;
 			right: 0;
-			bottom: 0;
+			bottom: -190px;
 			margin: 0;
 			padding: 0;
 			font-size: 0;

@@ -3619,18 +3619,35 @@ label {
     margin-bottom: 60px; }
   .b07 .reply {
     position: relative; }
-    .b07 .reply .reply-slider {
+    .b07 .reply .reply-avatar-inner {
+      width: 720px;
+      overflow: hidden;
+      margin: 0 auto 20px auto; }
+    .b07 .reply .reply-avatar {
+      width: 230px;
+      margin: 0 auto; }
+      .b07 .reply .reply-avatar .reply-avatar-item {
+        outline: none; }
+        .b07 .reply .reply-avatar .reply-avatar-item .reply-image {
+          width: 130px;
+          margin: 50px auto;
+          outline: none;
+          opacity: 0.4;
+          filter: alpha(opacity=40); }
+        .b07 .reply .reply-avatar .reply-avatar-item.slick-current .reply-image {
+          width: 100%;
+          margin: 0;
+          opacity: 1;
+          filter: alpha(opacity=100); }
+      .b07 .reply .reply-avatar .slick-list {
+        overflow: visible; }
+    .b07 .reply .reply-source {
       width: 940px;
-      height: 440px;
       margin: 0 auto;
       overflow: hidden;
       padding-bottom: 50px; }
-      .b07 .reply .reply-slider .reply-item {
-        outline: none; }
-    .b07 .reply .reply-image {
-      width: 240px;
-      height: 240px;
-      margin: 0 auto 15px auto; }
+    .b07 .reply .reply-item {
+      outline: none; }
     .b07 .reply .reply-author {
       color: #000;
       font-size: 14px;
@@ -3656,6 +3673,8 @@ label {
       font-size: 16px;
       line-height: 24px;
       text-align: center; }
+    .b07 .reply .reply-slider {
+      position: relative; }
     .b07 .reply .reply-nav {
       width: 20px;
       bottom: 60px;
@@ -3676,7 +3695,7 @@ label {
     .b07 .reply .slick-dots {
       left: 0;
       right: 0;
-      bottom: 0;
+      bottom: -190px;
       margin: 0;
       padding: 0;
       font-size: 0;

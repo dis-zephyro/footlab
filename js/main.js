@@ -54,8 +54,10 @@ $('.food-slider').slick({
     arrows: false,
     autoplay: true,
     dots: false,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 6000,
     slidesToShow: 1,
+    fade: true,
+    cssEase: 'ease-in-out',
     slidesToScroll: 1
 });
 
@@ -64,21 +66,31 @@ $('.food-next').click(function(){
 });
 
 
-$('.reply-slider').slick({
-    arrows: false,
-    autoplay: true,
-    dots: true,
-    autoplaySpeed: 4000,
+$('.reply-avatar').slick({
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    infinite: false,
+    asNavFor: '.reply-source',
+    dots: true,
+    arrows: false
+});
+
+$('.reply-source').slick({
+    arrows: false,
+    autoplay: false,
+    dots: false,
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.slider-nav'
 });
 
 $('.reply-nav.prev').click(function(){
-    $('.reply-slider').slick('slickPrev');
+    $('.reply-avatar').slick('slickPrev');
 });
 
 $('.reply-nav.next').click(function(){
-    $('.reply-slider').slick('slickNext');
+    $('.reply-avatar').slick('slickNext');
 });
 
 
