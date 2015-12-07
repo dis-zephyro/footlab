@@ -161,10 +161,10 @@
                 <div class="top-title">Foodlab</div>
                 <h2>вы экономите</h2>
                 <ul class="economy clearfix">
-                    <li class="item1 scroll">2</li>
-                    <li class="item2 scroll">11</li>
-                    <li class="item3 scroll">2</li>
-                    <li class="item4 scroll">36</li>
+                    <li class="item1" id="count1">2</li>
+                    <li class="item2" id="count2">11</li>
+                    <li class="item3" id="count3">2</li>
+                    <li class="item4" id="count4">36</li>
                 </ul>
 
                 <ul class="economy-text scroll">
@@ -453,7 +453,7 @@
                                                     <span>Количество ужинов:</span>
                                                     <label><input type="radio" name="dinner" value="3">3</label>
                                                     <span>дня</span>
-                                                    <label><input type="radio" name="dinner" value="5">5</label>
+                                                    <label><input type="radio" name="dinner" value="5" checked>5</label>
                                                     <span>дней</span>
                                                 </li>
                                                 <li>
@@ -468,7 +468,7 @@
                                                 <li class="slice">
                                                     <span>Нарезать продукты:</span>
                                                     <label>
-                                                        <input type="radio" name="slice" value="1.1">
+                                                        <input type="radio" name="slice" value="1.1" checked>
                                                         <span class="choice">да</span>
                                                     </label>
                                                     <label>
@@ -631,7 +631,7 @@
                                                     <span>Количество ужинов:</span>
                                                     <label><input type="radio" name="dinner" value="3">3</label>
                                                     <span>дня</span>
-                                                    <label><input type="radio" name="dinner" value="5">5</label>
+                                                    <label><input type="radio" name="dinner" value="5" checked>5</label>
                                                     <span>дней</span>
                                                 </li>
                                                 <li>
@@ -646,7 +646,7 @@
                                                 <li class="slice">
                                                     <span>Нарезать продукты:</span>
                                                     <label>
-                                                        <input type="radio" name="slice" value="1.1">
+                                                        <input type="radio" name="slice" value="1.1" checked>
                                                         <span class="choice">да</span>
                                                     </label>
                                                     <label>
@@ -809,7 +809,7 @@
                                                     <span>Количество ужинов:</span>
                                                     <label><input type="radio" name="dinner" value="3">3</label>
                                                     <span>дня</span>
-                                                    <label><input type="radio" name="dinner" value="5">5</label>
+                                                    <label><input type="radio" name="dinner" value="5" checked>5</label>
                                                     <span>дней</span>
                                                 </li>
                                                 <li>
@@ -828,7 +828,7 @@
                                                         <span class="choice">да</span>
                                                     </label>
                                                     <label>
-                                                        <input type="radio" name="slice" value="1">
+                                                        <input type="radio" name="slice" value="1" checked>
                                                         <span class="choice">нет</span>
                                                     </label>
                                                 </li>
@@ -845,6 +845,7 @@
                     </div>
                 </div>
             </div>
+            <a class="foodlab-about btn-scroll" href="#b02"></a>
         </section>
 
         <section class="b10" id="b10">
@@ -1028,6 +1029,7 @@
         <script src="js/vendor/slick/slick.min.js"></script>
         <script src="js/vendor/ion.checkRadio.min.js"></script>
         <script src="js/vendor/jquery.scrollTo.min.js"></script>
+        <script src="js/vendor/countUp.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

@@ -17,6 +17,14 @@
 	.food-time {
 		width: 800px;
 
+		tr {
+			background: url("../img/table-line.png") 50% 100% no-repeat;
+
+			&:last-child {
+				background: transparent;
+			}
+		}
+
 		th {
 			height: 81px;
 			padding: 0 40px;
@@ -46,7 +54,6 @@
 			font-weight: 600;
 			line-height: 24px;
 			vertical-align: middle;
-			border-top: 1px solid #dcdcdc;
 
 			&:first-child {
 				width: 280px;
@@ -57,7 +64,6 @@
 			}
 
 			&:last-child {
-				border-top: 1px solid $color-yellow;
 				border-left: 1px solid $color-yellow;
 			}
 

@@ -3427,6 +3427,10 @@ label {
     margin-bottom: 90px; }
   .b04 .food-time {
     width: 800px; }
+    .b04 .food-time tr {
+      background: url("../img/table-line.png") 50% 100% no-repeat; }
+      .b04 .food-time tr:last-child {
+        background: transparent; }
     .b04 .food-time th {
       height: 81px;
       padding: 0 40px;
@@ -3449,8 +3453,7 @@ label {
       font-size: 24px;
       font-weight: 600;
       line-height: 24px;
-      vertical-align: middle;
-      border-top: 1px solid #dcdcdc; }
+      vertical-align: middle; }
       .b04 .food-time td:first-child {
         width: 280px;
         font-size: 18px;
@@ -3458,7 +3461,6 @@ label {
         padding-left: 0;
         border-right: 1px solid #dcdcdc; }
       .b04 .food-time td:last-child {
-        border-top: 1px solid #dc9122;
         border-left: 1px solid #dc9122; }
       .b04 .food-time td.summary {
         font-size: 30px;
@@ -3517,18 +3519,18 @@ label {
       text-transform: uppercase; }
   .b05 .bottom-group {
     left: 0;
-    bottom: 0;
+    bottom: 70px;
     width: 100%;
     z-index: 100;
     text-align: center;
     position: absolute; }
     .b05 .bottom-group .bottom-group-text {
       color: #ddd;
-      padding: 30px 0;
+      padding-bottom: 20px;
       font-size: 16px;
       font-weight: 600;
       line-height: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       text-transform: uppercase;
       position: relative; }
       .b05 .bottom-group .bottom-group-text:before {
@@ -4057,7 +4059,7 @@ label {
               position: absolute;
               background: url("../img/icon-loop.png") 0 0 no-repeat; }
         .b09 .carte .food .food-header .food-day {
-          top: 160px;
+          top: 60px;
           left: 255px;
           color: #888;
           font-size: 14px;
@@ -4127,6 +4129,15 @@ label {
     border-radius: 0 0 8px 8px; }
     .b09 .order-form-summary span {
       font-size: 30px; }
+  .b09 .foodlab-about {
+    right: 0;
+    top: 300px;
+    width: 69px;
+    height: 325px;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    background: url("../img/left-btn.png") 0 0 no-repeat; }
 
 .b10 {
   color: #fff;

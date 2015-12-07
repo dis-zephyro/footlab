@@ -29,6 +29,40 @@ $(document).ready(function() {
     }
 });
 
+
+
+var options = {
+    useEasing : true,
+    useGrouping : false,
+    separator : ',',
+    decimal : '.'
+}
+
+$(".economy").each(function () {
+
+    var block = $(this);
+    $(window).scroll(function() {
+        var top = block.offset().top;
+        var bottom = block.height()+top;
+        top = top - $(window).height();
+        var scroll_top = $(this).scrollTop();
+        if ((scroll_top > top) && (scroll_top < bottom)) {
+
+            var count1 = new countUp("count1", 0, 2, 0, 4, options);
+            var count2 = new countUp("count2", 0, 11, 0, 4, options);
+            var count3 = new countUp("count3", 0, 2, 0, 4, options);
+            var count4 = new countUp("count4", 0, 36, 0, 4, options);
+
+            count1.start();
+            count2.start();
+            count3.start();
+            count4.start();
+
+        } else {
+        }
+    });
+});
+
 //Калькулятор
 
 $(".calc form").change(function() {
@@ -70,6 +104,7 @@ $('.reply-avatar').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: false,
+    initialSlide: 1,
     asNavFor: '.reply-source',
     dots: true,
     arrows: false
@@ -79,6 +114,7 @@ $('.reply-source').slick({
     arrows: false,
     autoplay: false,
     dots: false,
+    initialSlide: 1,
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,

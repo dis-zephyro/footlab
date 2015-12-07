@@ -260,7 +260,7 @@
 				}
 
 				.food-day {
-					top: 160px;
+					top: 60px;
 					left: 255px;
 					color: #888;
 					font-size: 14px;
@@ -350,5 +350,16 @@
 		span {
 			font-size: 30px;
 		}
+	}
+
+	.foodlab-about {
+		right: 0;
+		top: 300px;
+		width: 69px;
+		height: 325px;
+		outline: none;
+		cursor: pointer;
+		position: absolute;
+		background: url("../img/left-btn.png") 0 0 no-repeat;
 	}
 }
