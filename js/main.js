@@ -30,23 +30,18 @@ $(document).ready(function() {
 });
 
 
+jQuery(document).ready(function($) {
+    $('.economy').viewportChecker({
+        invertBottomOffset: true,
+        repeat: false,
+        callbackFunction: function(elem, action){
 
-var options = {
-    useEasing : true,
-    useGrouping : false,
-    separator : ',',
-    decimal : '.'
-}
-
-$(".economy").each(function () {
-
-    var block = $(this);
-    $(window).scroll(function() {
-        var top = block.offset().top;
-        var bottom = block.height()+top;
-        top = top - $(window).height();
-        var scroll_top = $(this).scrollTop();
-        if ((scroll_top > top) && (scroll_top < bottom)) {
+            var options = {
+                useEasing : true,
+                useGrouping : false,
+                separator : ',',
+                decimal : '.'
+            };
 
             var count1 = new countUp("count1", 0, 2, 0, 4, options);
             var count2 = new countUp("count2", 0, 11, 0, 4, options);
@@ -57,11 +52,12 @@ $(".economy").each(function () {
             count2.start();
             count3.start();
             count4.start();
-
-        } else {
-        }
-    });
+        },
+        scrollHorizontal: false
+    })
 });
+
+
 
 //Калькулятор
 
