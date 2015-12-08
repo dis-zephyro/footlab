@@ -4264,6 +4264,10 @@ label {
         -webkit-transition: 0.5s;
         -o-transition: 0.5s;
         transition: 0.5s; }
+        .b10 .best-food .food-header .food-image img {
+          -webkit-transition: 0.5s;
+          -o-transition: 0.5s;
+          transition: 0.5s; }
         .b10 .best-food .food-header .food-image:hover {
           position: relative; }
           .b10 .best-food .food-header .food-image:hover img {
