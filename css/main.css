@@ -2506,6 +2506,7 @@ th {
 
 html {
   font-size: 10px;
+  min-width: 1200px;
   -webkit-tap-highlight-color: transparent; }
 
 body {
