@@ -3842,7 +3842,7 @@ label {
           background: url("../img/b08_item3.png") 0 0 no-repeat; }
   .b08 .bottom-group {
     left: 0;
-    bottom: 40px;
+    bottom: 20px;
     width: 100%;
     z-index: 100;
     text-align: left;
@@ -4260,9 +4260,15 @@ label {
         display: block;
         overflow: hidden;
         position: relative;
-        margin: 0 auto; }
+        margin: 0 auto;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s; }
         .b10 .best-food .food-header .food-image:hover {
           position: relative; }
+          .b10 .best-food .food-header .food-image:hover img {
+            opacity: 0.5;
+            filter: alpha(opacity=50); }
           .b10 .best-food .food-header .food-image:hover:before {
             top: 50%;
             left: 50%;

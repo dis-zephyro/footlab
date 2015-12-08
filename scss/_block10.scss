@@ -172,9 +172,14 @@
 				overflow: hidden;
 				position: relative;
 				margin: 0 auto;
+				@include transition(.5s);
 
 				&:hover {
 					position: relative;
+
+					img {
+						@include opacity(0.5);
+					}
 
 					&:before {
 						top: 50%;
