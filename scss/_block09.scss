@@ -208,6 +208,29 @@
 						background: transparent;
 					}
 				}
+				.food-header {
+					position: relative;
+					@include transition(.5s);
+
+					.food-image {
+						@include transition(.5s);
+					}
+
+					.food-title {
+						@include transition(.5s);
+					}
+
+					&:hover {
+
+						.food-image {
+							z-index: 50;
+						}
+
+						.food-title {
+							z-index: 10;
+						}
+					}
+				}
 			}
 
 			.food-header {
