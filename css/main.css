@@ -2493,6 +2493,23 @@ th {
       -webkit-transform: scale(0);
       transform: scale(0); }
 
+/* Wobble Vertical */
+@-webkit-keyframes food-effect {
+  16.65% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    z-index: 100; } }
+@keyframes food-effect {
+  16.65% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    z-index: 100; } }
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -4014,23 +4031,11 @@ label {
         width: 33.33%; }
         .b09 .carte .food > li:first-child .food-text {
           background: transparent; }
-        .b09 .carte .food > li .food-header {
-          position: relative;
-          -webkit-transition: 0.5s;
-          -o-transition: 0.5s;
-          transition: 0.5s; }
-          .b09 .carte .food > li .food-header .food-image {
-            -webkit-transition: 0.5s;
-            -o-transition: 0.5s;
-            transition: 0.5s; }
-          .b09 .carte .food > li .food-header .food-title {
-            -webkit-transition: 0.5s;
-            -o-transition: 0.5s;
-            transition: 0.5s; }
-          .b09 .carte .food > li .food-header:hover .food-image {
-            z-index: 50; }
-          .b09 .carte .food > li .food-header:hover .food-title {
-            z-index: 10; }
+        .b09 .carte .food > li:hover .food-header {
+          position: relative; }
+          .b09 .carte .food > li:hover .food-header .food-image {
+            -webkit-animation: food-effect 2s .2s forwards;
+            animation: food-effect 2s .2s forwards; }
       .b09 .carte .food .food-header {
         position: relative;
         margin-bottom: 10px; }
