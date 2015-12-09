@@ -61,19 +61,20 @@ jQuery(document).ready(function($) {
 
 //Калькулятор
 
-$(".calc form").change(function() {
-    var totalSum = 3750;
-    var count = parseInt($('select').val());
-    var dinner =($('input[name="dinner"]').val());
-    var slice = ($('input[name="slice"]').val());
 
-    console.log(count);
-    console.log(dinner);
-    console.log(slice);
-    console.log('----------');
+
+
+$(".order-form-summary span").text(parseInt($('input[name="base-price"]').val() * 1 * 5 * 1.1));
+
+$(".calculation-form").change(function() {
+    var totalSum = $('input[name="base-price"]').val() ;
+    var count = parseInt($('select').val());
+    var dinner =$('input[name="dinner"]:checked').val();
+    var slice = $('input[name="slice"]:checked').val();
+
     totalSum = parseInt(totalSum * count * dinner * slice + 1);
     console.log(totalSum);
-    console.log('==========');
+
 
     $(".order-form-summary span").text(totalSum);
 });

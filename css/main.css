@@ -2807,6 +2807,8 @@ label {
       appearance: none !important; }
       .order-form ol select::-ms-expand {
         display: none; }
+  .order-form p {
+    padding-top: 130px; }
   .order-form .slice .icr-label {
     font-size: 9px; }
 
@@ -4028,7 +4030,8 @@ label {
       margin: 0 -20px 50px -65px; }
       .b09 .carte .food > li {
         float: left;
-        width: 33.33%; }
+        width: 33.33%;
+        position: relative; }
         .b09 .carte .food > li:first-child .food-text {
           background: transparent; }
         .b09 .carte .food > li:hover .food-header {
@@ -4134,6 +4137,12 @@ label {
             background: #ededed; }
           .b09 .carte .food .food-text .food-info li {
             margin-bottom: 5px; }
+  .b09 .calculation-form {
+    left: 30px;
+    right: 30px;
+    height: 115px;
+    bottom: 120px;
+    position: absolute; }
   .b09 .order-form-summary {
     z-index: 10;
     width: 270px;
@@ -4382,15 +4391,15 @@ label {
         color: #dc9122; }
     .b10 .first-order-form ol {
       padding: 0;
-      margin: 0 -10px;
+      margin: 0 -10px 25px -10px;
       overflow: hidden;
-      list-style: none; }
+      list-style: none;
+      position: relative; }
       .b10 .first-order-form ol li {
         float: left;
         width: 33.33%;
         padding: 0 10px;
-        position: relative;
-        margin-bottom: 55px; }
+        position: relative; }
         .b10 .first-order-form ol li:last-child {
           float: right; }
       .b10 .first-order-form ol select,
@@ -4447,14 +4456,12 @@ label {
     .b10 .first-order-form .slice .icr-label {
       font-size: 9px; }
     .b10 .first-order-form .sendbutton {
-      width: 338px;
-      margin-top: -145px; }
+      width: 338px; }
     .b10 .first-order-form .sup-text {
       color: #fff;
       font-size: 16px;
       line-height: 20px;
       text-align: center;
-      margin-top: -50px;
       text-transform: uppercase; }
 
 .footer {

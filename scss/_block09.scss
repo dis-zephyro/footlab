@@ -201,6 +201,7 @@
 			> li {
 				float: left;
 				width: 33.33%;
+				position: relative;
 
 				&:first-child {
 
@@ -348,6 +349,15 @@
 			}
 		}
 	}
+
+	.calculation-form {
+		left: 30px;
+		right: 30px;
+		height: 115px;
+		bottom: 120px;
+		position: absolute;
+	}
+
 
 	.order-form-summary {
 		z-index: 10;

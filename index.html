@@ -449,16 +449,26 @@
                                                 <li>
                                                     <input type="text" name="cf8_field_3" class="single" value="" placeholder="Адрес доставки"/>
                                                 </li>
+
+                                            </ol>
+                                            <p class="cf-sb">
+                                                <input type="submit" name="sendbutton8" class="sendbutton" value="Заказать набор продуктов  " onclick="return cforms_validate('8', false)"/>
+                                            </p>
+                                        </form>
+                                        <form class="calculation-form">
+                                            <ol>
+                                                <li class="hide">
+                                                    <input name="base-price" type="hidden" value="700">
+                                                </li>
                                                 <li>
                                                     <span>Количество ужинов:</span>
                                                     <label><input type="radio" name="dinner" value="3">3</label>
                                                     <span>дня</span>
-                                                    <label><input type="radio" name="dinner" value="5">5</label>
+                                                    <label><input type="radio" name="dinner" value="5" checked >5</label>
                                                     <span>дней</span>
                                                 </li>
                                                 <li>
                                                     <select name="count">
-                                                        <option value="1">Количество порций</option>
                                                         <option value="1">1 порция</option>
                                                         <option value="2">2 порции</option>
                                                         <option value="3">3 порции</option>
@@ -468,7 +478,7 @@
                                                 <li class="slice">
                                                     <span>Нарезать продукты:</span>
                                                     <label>
-                                                        <input type="radio" name="slice" value="1.1">
+                                                        <input type="radio" name="slice" value="1.1" checked >
                                                         <span class="choice">да</span>
                                                     </label>
                                                     <label>
@@ -477,9 +487,6 @@
                                                     </label>
                                                 </li>
                                             </ol>
-                                            <p class="cf-sb">
-                                                <input type="submit" name="sendbutton8" class="sendbutton" value="Заказать набор продуктов  " onclick="return cforms_validate('8', false)"/>
-                                            </p>
                                         </form>
                                     </div>
                                     <div class="order-form-summary">Итого: <span class="summ">3750</span> руб.</div>
@@ -937,24 +944,6 @@
                                 <li>
                                     <input type="text" name="cf8_field_3" class="single" value="" placeholder="Адрес доставки"/>
                                 </li>
-                                <li>
-                                    <span>Количество ужинов:</span>
-                                    <label><input type="radio" name="dinner">3</label>
-                                    <span>дня</span>
-                                    <label><input type="radio" name="dinner">5</label>
-                                    <span>дней</span>
-                                </li>
-                                <li class="slice">
-                                    <span>Нарезать продукты:</span>
-                                    <label>
-                                        <input type="radio" name="slice">
-                                        <span class="choice">да</span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="slice">
-                                        <span class="choice">нет</span>
-                                    </label>
-                                </li>
                             </ol>
                             <p class="cf-sb">
                                 <input type="submit" name="sendbutton8" class="sendbutton" value="Заказать набор продуктов  " onclick="return cforms_validate('8', false)"/>
@@ -988,7 +977,6 @@
                         <li><a href="">Кухня</a></li>
                         <li><a href="">о нас</a></li>
                         <li><a href="">Партнерская программа</a></li>
-
                     </ul>
 
                     <ul class="footer-social clearfix">
