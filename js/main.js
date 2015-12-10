@@ -62,21 +62,53 @@ jQuery(document).ready(function($) {
 //Калькулятор
 
 
+// 1
+$(".order-form-summary .summ1").text(parseInt($('input[name="base-price1"]').val() * 1 * 5 * 1.1));
 
-
-$(".order-form-summary span").text(parseInt($('input[name="base-price"]').val() * 1 * 5 * 1.1));
-
-$(".calculation-form").change(function() {
-    var totalSum = $('input[name="base-price"]').val() ;
+$("form[name='form-calc1']").change(function() {
+    var totalSum = $('input[name="base-price1"]').val() ;
     var count = parseInt($('select').val());
-    var dinner =$('input[name="dinner"]:checked').val();
-    var slice = $('input[name="slice"]:checked').val();
+    var dinner =$('input[name="dinner1"]:checked').val();
+    var slice = $('input[name="slice1"]:checked').val();
 
     totalSum = parseInt(totalSum * count * dinner * slice + 1);
     console.log(totalSum);
 
 
-    $(".order-form-summary span").text(totalSum);
+    $(".order-form-summary .summ1").text(totalSum);
+});
+
+//2
+
+$(".order-form-summary .summ2").text(parseInt($('input[name="base-price2"]').val() * 1 * 5 * 1.1));
+
+$("form[name='form-calc2']").change(function() {
+    var totalSum = $('input[name="base-price2"]').val() ;
+    var count = parseInt($('select').val());
+    var dinner =$('input[name="dinner2"]:checked').val();
+    var slice = $('input[name="slice2"]:checked').val();
+
+    totalSum = parseInt(totalSum * count * dinner * slice + 1);
+    console.log(totalSum);
+
+
+    $(".order-form-summary .summ2").text(totalSum);
+});
+
+//3
+$(".order-form-summary .summ3").text(parseInt($('input[name="base-price3"]').val() * 1 * 5 * 1.1));
+
+$("form[name='form-calc3']").change(function() {
+    var totalSum = $('input[name="base-price3"]').val() ;
+    var count = parseInt($('select').val());
+    var dinner =$('input[name="dinner3"]:checked').val();
+    var slice = $('input[name="slice3"]:checked').val();
+
+    totalSum = parseInt(totalSum * count * dinner * slice + 1);
+    console.log(totalSum);
+
+
+    $(".order-form-summary .summ3").text(totalSum);
 });
 
 //  Slider
